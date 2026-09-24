@@ -14,7 +14,10 @@ export default function Footer() {
           <a href="#vlogs" className="hover:text-rose">Vlogs</a>
           <a href="#contact" className="hover:text-rose">Contact</a>
         </nav>
-        <p>© {new Date().getFullYear()} Shantaye Brown. All rights reserved.</p>
+        <div className="text-center md:text-right">
+          <a href={`mailto:${site.email}`} className="hover:text-rose">{site.email}</a>
+          <p className="mt-1">© {new Date().getFullYear()} Shantaye Brown. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );
