@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-ink text-bone font-sans antialiased; }
+::selection { background: #e0426b; color: #fff; }
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .eyebrow { @apply text-xs font-semibold uppercase tracking-[0.25em] text-rose; }
+  .h2 { @apply font-serif text-4xl leading-tight sm:text-5xl; }
+  .btn { @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition; }
+  .btn-primary { @apply btn bg-rose text-white hover:bg-rose-deep; }
+  .btn-ghost { @apply btn border border-bone/30 text-bone hover:border-bone hover:bg-bone hover:text-ink; }
+  .field { @apply w-full rounded-lg border border-bone/15 bg-smoke px-4 py-3 text-bone placeholder:text-taupe/70 focus:border-rose focus:outline-none; }
+}
